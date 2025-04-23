@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EcoBeauty - Sustainable Packaging</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <style>
+        .glass {
+            background: rgba(255, 255, 255, 0.2);
+            backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.18);
+        }
+        body {
+            font-family: 'Poppins', sans-serif;
+            background: linear-gradient(135deg, #84fab0 0%, #8fd3f4 100%);
+            min-height: 100vh;
+        }
+        .product-card:hover {
+            transform: translateY(-5px);
+            transition: all 0.3s ease;
+        }
+    </style>
+</head>
+<body class="m-0 p-0">
+    <!-- Navigation -->
+    <nav class="glass fixed w-full z-50 p-4">
+        <div class="container mx-auto flex justify-between items-center">
+            <h1 class="text-2xl font-bold text-white">EcoBeauty</h1>
+            <div class="flex items-center gap-6">
+                <form class="relative">
+                    <input type="search" placeholder="Search products..." class="py-2 px-4 rounded-full glass text-white placeholder-white outline-none">
+                    <i class="bi bi-search absolute right-3 top-2.5 text-white"></i>
+                </form>
+                <div class="flex gap-4">
+                    <i class="bi bi-heart text-white text-xl"></i>
+                    <i class="bi bi-cart text-white text-xl"></i>
+                    <i class="bi bi-person-circle text-white text-xl"></i>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="pt-24 px-4 container mx-auto">
+        <!-- Hero Section -->
+        <section class="glass rounded-2xl p-8 mb-8">
+            <h2 class="text-4xl font-bold text-white mb-4">Sustainable Beauty for a Better Tomorrow</h2>
+            <p class="text-white mb-6">Join us in reducing plastic waste with eco-friendly packaging solutions.</p>
+            <div class="flex gap-4">
+                <button class="bg-white text-green-500 px-6 py-2 rounded-full font-medium">Shop Now</button>
+                <button class="glass text-white px-6 py-2 rounded-full font-medium">Learn More</button>
+            </div>
+        </section>
+
+        <!-- Categories -->
+        <div class="flex gap-4 mb-8 overflow-x-auto pb-4">
+            <button class="glass text-white px-6 py-2 rounded-full whitespace-nowrap">All Products</button>
+            <button class="glass text-white px-6 py-2 rounded-full whitespace-nowrap">Shampoo</button>
+            <button class="glass text-white px-6 py-2 rounded-full whitespace-nowrap">Conditioner</button>
+            <button class="glass text-white px-6 py-2 rounded-full whitespace-nowrap">Moisturizer</button>
+            <button class="glass text-white px-6 py-2 rounded-full whitespace-nowrap">Sunscreen</button>
+            <button class="glass text-white px-6 py-2 rounded-full whitespace-nowrap">Body Lotion</button>
+        </div>
+
+        <!-- Products Grid -->
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6 mb-8">
+            <!-- Product Cards -->
+            <div class="product-card glass rounded-xl p-4">
+                <img src="https://images.unsplash.com/photo-1556228720-195a672e8a03" alt="Eco Shampoo" class="w-full h-48 object-cover rounded-lg mb-4">
+                <div class="flex justify-between items-start mb-2">
+                    <div>
+                        <h3 class="text-white font-semibold">Eco Shampoo</h3>
+                        <p class="text-white opacity-75">Bamboo Packaging</p>
+                    </div>
+                    <button class="glass p-2 rounded-full">
+                        <i class="bi bi-heart text-white"></i>
+                    </button>
+                </div>
+                <div class="flex justify-between items-center">
+                    <span class="text-white font-bold">$24.99</span>
+                    <button class="glass text-white px-4 py-2 rounded-full text-sm">Add to Cart</button>
+                </div>
+            </div>
+            <!-- Repeat product cards with different images and details -->
+        </div>
+
+        <!-- Sustainability Section -->
+        <section class="glass rounded-2xl p-8 mb-8">
+            <h2 class="text-2xl font-bold text-white mb-4">Sustainability Features</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <div class="text-center">
+                    <i class="bi bi-recycle text-white text-4xl mb-2"></i>
+                    <h3 class="text-white font-semibold">Recycled Materials</h3>
+                    <p class="text-white opacity-75">100% recyclable packaging</p>
+                </div>
+                <div class="text-center">
+                    <i class="bi bi-tree text-white text-4xl mb-2"></i>
+                    <h3 class="text-white font-semibold">Zero Waste</h3>
+                    <p class="text-white opacity-75">Minimal environmental impact</p>
+                </div>
+                <div class="text-center">
+                    <i class="bi bi-award text-white text-4xl mb-2"></i>
+                    <h3 class="text-white font-semibold">Certified Organic</h3>
+                    <p class="text-white opacity-75">Natural ingredients</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="glass mt-8 p-8">
+        <div class="container mx-auto grid grid-cols-1 md:grid-cols-4 gap-8">
+            <div>
+                <h3 class="text-white font-bold mb-4">About Us</h3>
+                <p class="text-white opacity-75">Committed to sustainable beauty and environmental conservation.</p>
+            </div>
+            <div>
+                <h3 class="text-white font-bold mb-4">Quick Links</h3>
+                <ul class="text-white opacity-75">
+                    <li class="mb-2">Products</li>
+                    <li class="mb-2">Sustainability</li>
+                    <li class="mb-2">Rewards</li>
+                    <li>Contact</li>
+                </ul>
+            </div>
+            <div>
+                <h3 class="text-white font-bold mb-4">Connect</h3>
+                <div class="flex gap-4">
+                    <i class="bi bi-facebook text-white text-xl"></i>
+                    <i class="bi bi-instagram text-white text-xl"></i>
+                    <i class="bi bi-twitter text-white text-xl"></i>
+                </div>
+            </div>
+            <div>
+                <h3 class="text-white font-bold mb-4">Newsletter</h3>
+                <form class="flex gap-2">
+                    <input type="email" placeholder="Your email" class="glass text-white placeholder-white px-4 py-2 rounded-full flex-1">
+                    <button class="glass text-white px-6 py-2 rounded-full">Subscribe</button>
+                </form>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Product data simulation
+        const products = [
+            {
+                name: "Eco Shampoo",
+                price: 24.99,
+                package: "Bamboo Packaging",
+                image: "https://images.unsplash.com/photo-1556228720-195a672e8a03"
+            }
+            // Add more products as needed
+        ];
+
+        // Wishlist functionality
+        document.querySelectorAll('.bi-heart').forEach(heart => {
+            heart.addEventListener('click', function() {
+                this.classList.toggle('text-red-500');
+            });
+        });
+
+        // Cart functionality
+        let cart = [];
+        document.querySelectorAll('button').forEach(button => {
+            if(button.textContent === 'Add to Cart') {
+                button.addEventListener('click', function() {
+                    cart.push(products[0]);
+                    alert('Product added to cart!');
+                });
+            }
+        });
+
+        // Search functionality
+        document.querySelector('input[type="search"]').addEventListener('input', function(e) {
+            const searchTerm = e.target.value.toLowerCase();
+            // Implement search logic here
+        });
+    </script>
+<script>document.body.addEventListener('wheel', e => { if (!e.ctrlKey) return; e.preventDefault(); return }, { passive: false })</script>
+	</body>
+</html>
